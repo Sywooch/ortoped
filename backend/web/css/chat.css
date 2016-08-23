@@ -1,0 +1,192 @@
+#chat_trigger {
+	display: block;
+	width: 300px;
+	height: 30px;
+	border:1px solid #ccc;
+	background: #eee;
+	padding:5px;
+	position: fixed;
+	z-index: 1040;
+	bottom:0px;
+	left:10px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+	box-shadow: 0px 0px 10px #ddd;
+}
+#chat_block{
+	display: none;
+	width:600px;
+	height:550px;
+	position: fixed;
+	z-index: 1040;
+	bottom:-550px;
+	left:10px;
+	border:1px solid #ccc;
+	background: #eee;
+	padding:5px 10px;
+	box-shadow: 0px 0px 10px #ddd;
+}
+#chat_block.locked {
+	background: #d1d1d1;
+}
+#chat_header{
+	height: 30px;
+}
+#chat-body-wrapper {
+	position: relative;
+	height:380px;
+}
+#chat_msg{
+	overflow-y: auto;
+	height:380px;
+	width:360px;
+	float:left;
+	border:1px solid #ccc;
+	background: #fff;
+}
+#chat_msg #chat-welcome-message {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 190px;
+}
+#chat_users{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	overflow-y: auto;
+	height:380px;
+	width:220px;
+    border:1px solid #ccc;
+	background: #fff;
+}
+/* ввод сообщения */
+#chat_text{
+	float:left;
+	width:100%;
+	height:100px;
+	background: #fff;
+}
+#chat_msgtext{
+	width:100%;
+	height:100px;
+	border:1px solid #ccc;
+}
+
+#chat_text:hover #send_msg {
+	display: block;
+}
+#send_msg{
+	display: none;
+	z-index:110;
+	position:absolute;
+	bottom:25px;
+	right:20px;
+}
+ #chat_user{
+	padding: 5px;
+}
+
+#chat_user li{
+	
+}
+
+#chat_user li.active{
+	
+}
+
+#chat_user li:hover{
+	
+}
+
+.chat{
+	padding:0px;
+}
+
+#chat_user li a:link,
+#chat_user li a:visited {
+	display: block;
+	text-decoration: none;
+	color: black;
+	outline: none;
+	padding: 5px 10px;
+}
+
+#chat_user li a:hover {
+	background: #81afcc;
+}
+
+#chat_user li a.active {
+	background: #4A7B9A;
+	color:#fff;
+}
+
+.chat li{
+	border-radius: 5px;
+	width:80%;
+	padding:5px 0px 5px 10px;
+	margin:5px;
+	list-style: none;
+
+}
+.chat li:hover{
+	background:#fffcd2;
+
+}
+.chat_msg_user{
+	float:left;
+	background: #bdf0ff;
+}
+.chat_msg_user_unread{
+	float:left;
+	background: #fffcd2;
+}
+.chat_msg_status_ico {
+	float: right;
+	margin-right: 10px;
+	color: #82B5CE;
+}
+
+.chat_msg_opponent{
+	float:right;
+	background: #d7fdde;
+}
+
+.delete_chat_msg{
+	width:25px;
+	height:25px;
+	position:relative;
+	float:right;
+	border-radius:12px;
+	text-align: center ;
+	cursor: pointer;
+}
+
+.delete_chat_msg:hover{
+	background:#fffef1;
+
+}
+.is_draggable {
+	cursor: move;
+}
+.chat_is_dragging {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none; 
+}
+#chat_close_btn {
+	float: right;
+}
+#chat_block .unread-co {
+	display: block;
+	float: right;
+	padding: 2px 8px;
+	font-size: 12px;
+	background: #2077C1;
+	color: #fff;
+	border-radius: 6px;
+}
